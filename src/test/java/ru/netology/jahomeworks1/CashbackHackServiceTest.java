@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 public class CashbackHackServiceTest {
 
-    @Test
+    @org.junit.Test
     public void testRemainShouldReturnCorrectRemainWhenAmountIsNotMultipleOfBoundary() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
@@ -16,7 +16,7 @@ public class CashbackHackServiceTest {
         assertEquals(expectedRemain, actualRemain);
     }
 
-    @Test
+    @org.junit.Test
     public void testRemainShouldReturnCorrectRemainWhenAmountIsNotExactMultipleOfBoundary() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
