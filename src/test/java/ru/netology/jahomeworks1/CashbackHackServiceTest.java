@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import ru.netology.jahomeworks1.CashbackHackService;
 
 public class CashbackHackServiceTest {
-    @Test
+    @org.testng.annotations.Test
     public void testRemain() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
@@ -14,7 +14,7 @@ public class CashbackHackServiceTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void testRemainWithExactAmount() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
